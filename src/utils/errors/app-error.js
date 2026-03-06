@@ -7,4 +7,4 @@ class AppError extends Error{
     }
 }
 
-modeule.exports = AppError;
+module.exports = AppError;
