@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const {ServerConfig} = require("./config");
 const apiRoutes = require("./routes");
-
+app.use(express.json());
+app.use(express.urlencoded());
 
 app.use('/api',apiRoutes);
 
